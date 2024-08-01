@@ -1,0 +1,126 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.sidebar {
+  width: 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 20px 10px 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: 100%;
+}
+
+
+.droppable-area {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  height: 100%;
+  overflow-y: auto;
+}
+
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 130px;
+  cursor: plus;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+.save-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-block;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+
+.draggable-item {
+  padding: 10px;
+  border: 1px solid #0f0202;
+  margin-bottom: 10px;
+  background-color: #cab887;
+  cursor: grab;
+}
+
+
+.droppable-item {
+  padding: 10px;
+  border: 1px solid #6e4141;
+  margin-bottom: 10px;
+  background-color: #693a3a;
+  position: relative;
+}
+
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+
+.editable-text, .editable-input {
+  border: 1px solid #dacccc;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
